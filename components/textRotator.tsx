@@ -53,7 +53,7 @@ const TextRotator = () => {
   return (
     <div className="nx-mt-2 nx-text-2xl nx-font-light nx-tracking-tight nx-text-slate-900 dark:nx-text-slate-100">
       <p>
-        MetaTags make your website{" "}
+        ProductX make your website {" "}
         <span className={styles.word}>
           {letters.map(({ char, key }) => (
             <span key={key} className={styles.letter}>

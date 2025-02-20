@@ -3,18 +3,20 @@ import classes from "./cards.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faRocket, 
-  faUsers, 
-  faBuilding, 
-  faPassport, 
-  faUserTie, 
-  faUserFriends, 
-  faAddressBook, 
-  faCertificate, 
-  faInfoCircle, 
-  faClipboardList, 
-  faEye, 
-  faHandshake, 
-  faMoneyBillWave
+  faHandHoldingMedical,
+  faBoxOpen,
+  faSquareUpRight,
+  faFingerprint,
+  faNetworkWired,
+  faGears,
+  faBarcode,
+  faCoins,
+  faStore,
+  faFaceSmile,
+  faComment,
+  faPhotoFilm,
+  faMoneyBills,
+  faPlus
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Cards() {
@@ -30,112 +32,131 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/BusinessActor/configure">
+        <Link href="/AboutRacine/service/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faUsers} className={classes.Icon} />
-            BUSINESS ACTOR
+            <FontAwesomeIcon icon={faHandHoldingMedical} className={classes.Icon} />
+            SERVICES
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <a href="/AboutRacine/Organisation/configure">
+        <Link href="/AboutRacine/ressource/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faBuilding} className={classes.Icon} />
-            ORGANISATION
-          </span>
-        </a>
-      </div>
-
-      <div className={classes.Card}>
-        <Link href="/AboutRacine/Agency/configure">
-          <span className={classes.Title}>
-            <FontAwesomeIcon icon={faPassport} className={classes.Icon} />
-            Agency
+            <FontAwesomeIcon icon={faBoxOpen} className={classes.Icon} />
+            RESSOURCES
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Employees/configure">
+        <Link href="/AboutRacine/product_post/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faUserTie} className={classes.Icon} />
-            Employee
+            <FontAwesomeIcon icon={faSquareUpRight} className={classes.Icon} />
+            PRODUCT POST
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Customers/configure">
+        <Link href="/AboutRacine/product_brand/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faUserFriends} className={classes.Icon} />
-            Customer
+            <FontAwesomeIcon icon={faFingerprint} className={classes.Icon} />
+            PRODUCT BRAND
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Contact/configure">
+        <Link href="/AboutRacine/variation/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faAddressBook} className={classes.Icon} />
-            Contact
+            <FontAwesomeIcon icon={faNetworkWired} className={classes.Icon} />
+            VARIATIONS
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Certifications/configure">
+        <Link href="/AboutRacine/categorie/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faCertificate} className={classes.Icon} />
-            Certifications
+            <FontAwesomeIcon icon={faBarcode} className={classes.Icon} />
+            CATEGORIE
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/PracticalInformation/configure">
+        <Link href="/AboutRacine/model/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faInfoCircle} className={classes.Icon} />
-            Practical Information
+            <FontAwesomeIcon icon={faGears} className={classes.Icon} />
+            MODEL
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/ProposedActivity/configure">
+        <Link href="/AboutRacine/sale_price/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faClipboardList} className={classes.Icon} />
-            Proposed Activity
+            <FontAwesomeIcon icon={faCoins} className={classes.Icon} />
+            SALE PRICES
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/prospect/configure">
+        <Link href="/AboutRacine/sale_point/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faEye} className={classes.Icon} />
-            Prospect
+            <FontAwesomeIcon icon={faStore} className={classes.Icon} />
+            SALE POINTS
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Providers/configure">
+        <Link href="/AboutRacine/reactions/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faHandshake} className={classes.Icon} />
-            Providers
+            <FontAwesomeIcon icon={faFaceSmile} className={classes.Icon} />
+            REACTIONS
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/SalesPerson/configure">
+        <Link href="/AboutRacine/reviews/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faMoneyBillWave} className={classes.Icon} />
-            Sales Person
+            <FontAwesomeIcon icon={faComment} className={classes.Icon} />
+            REVIEWS
           </span>
         </Link>
       </div>
+
+      <div className={classes.Card}>
+        <Link href="/AboutRacine/medias/about">
+          <span className={classes.Title}>
+            <FontAwesomeIcon icon={faPhotoFilm} className={classes.Icon} />
+            MEDIAS
+          </span>
+        </Link>
+      </div>
+
+      <div className={classes.Card}>
+        <Link href="/AboutRacine/pricing_mode/about">
+          <span className={classes.Title}>
+            <FontAwesomeIcon icon={faMoneyBills} className={classes.Icon} />
+            PRICING MODE
+          </span>
+        </Link>
+      </div>
+
+      <div className={classes.Card}>
+        <Link href="/AboutRacine/pricing_mode/about">
+          <span className={classes.Title}>
+            <FontAwesomeIcon icon={faPlus} className={classes.Icon} />
+            ATTRIBUTS
+          </span>
+        </Link>
+      </div>
+
     </div>
   );
 }

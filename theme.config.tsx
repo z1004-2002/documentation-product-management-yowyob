@@ -6,9 +6,9 @@ import ThemeSwitch from "./components/ThemeSwitch";
 
 const config: DocsThemeConfig = {
   logo: <Logo />,
-  docsRepositoryBase: "https://github.com/DIROIL/organisation.doc",
+  docsRepositoryBase: "https://github.com/z1004-2002/documentation-product-management-yowyob",
   footer: {
-    text: <>Organisation Documentation projet de synthese</>,
+    text: <>Product Management Documentation projet de synthese</>,
   },
   themeSwitch: {
     component: null,
@@ -19,7 +19,7 @@ const config: DocsThemeConfig = {
         <ThemeSwitch />
         <div className="max-lg:hidden">
           <a
-            href="https://github.com/DIROIL/organisation.doc"
+            href="https://github.com/z1004-2002/documentation-product-management-yowyob"
             target="_blank"
             rel="noreferrer"
             className="nx-p-2 nx-text-current"
@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s – Organisation_management Documentation",
+        titleTemplate: "%s – Product_management Documentation",
       };
     } else {
       return {

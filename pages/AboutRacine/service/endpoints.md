@@ -1,40 +1,51 @@
 # Endpoints
 
-### 1. Create Agency
+## List of End Points
 
-- **Endpoint**: `POST /api/v1/agence/create`
-- **Request Body**: `AgenceRequest`
-- **Response**: `AgenceResponse`
+### 1. Create a new service 
 
-### 2. Get All Agencies
+- **Endpoint**: `POST /api/v1/resource-management/service/create`
+- **Request Body**: `ServiceRequest` 
+- **Response**: `ServiceResponse`
+- **Params**: 
+  - organisationId (required): UUID 
+  - categorieId (required): UUID
 
-- **Endpoint**: `GET /api/v1/agence`
-- **Response**: `List<AgenceResponse>`
 
-### 3. Get Agency by ID
+### 2. Get All Services
 
-- **Endpoint**: `GET /api/v1/agence/{id_agence}`
-- **Response**: `AgenceResponse`
+- **Endpoint**: `GET /api/v1/resource-management/service`
+- **Response**: `List<ServiceResponse>`
+- **Params**: 
+  - organisationId: UUID
+  - categorieId: UUID
+
+### 3. Get Service by ID
+
+- **Endpoint**: `GET /api/v1/resource-management/service/{id}`
+- **Response**: `ServiceResponse`
+- **Path Variables**:
+  - id (id of service) : UUID
 
 ### 4. Update Agency
 
-- **Endpoint**: `PUT /api/v1/agence/update/{id_agence}`
-- **Request Body**: `AgenceRequest`
-- **Response**: `AgenceResponse`
+- **Endpoint**: `PUT /api/v1/resource-management/service/update/{id}`
+- **Request Body**: `ServiceRequest`
+- **Response**: `ServiceResponse`
+- **Path Variables**:
+  - id (id of service) : UUID
 
 ### 5. Delete Agency
 
-- **Endpoint**: `DELETE /api/v1/agence/delete/{id_agence}`
+- **Endpoint**: `DELETE /api/v1/resource-management/service/delete/{id}`
 - **Response**: `String`
+- **Path Variables**:
+  - id (id of service) : UUID
 
-### 6. Get All Active Agencies by Organization
-
-- **Endpoint**: `GET /api/v1/agence/active/{organisationId}`
-- **Response**: `List<AgenceResponse>`
 
 ## DTO Structures
 
-### 1. AgenceRequest
+### 1. Ser
 
 This DTO is used when creating or updating an Agency.
 
@@ -76,11 +87,12 @@ This DTO is used when creating or updating an Agency.
   "socialNetwork": "http://facebook.com/quickservices",
   "taxNumber": "TAX123456"
 }
+```
 
 2. AgenceResponse
 
 This DTO is used to return information about an Agency after creation or retrieval.
-Fields:
+```Fields:
 
     agencyId: UUID — Unique identifier for the agency.
     shortName: String — Short name of the agency.
@@ -95,9 +107,9 @@ Fields:
     registrationNumber: String — Registration number of the agency.
     socialNetwork: String — Social network links.
     taxNumber: String — Tax number of the agency.
-
+```
 Example:
-json
+```json
 
 {
   "agencyId": "a1a1a1a1-a1a1-4a1a-a1a1-a1a1a1a1a1a1",
@@ -114,6 +126,4 @@ json
   "socialNetwork": "http://facebook.com/quickservices",
   "taxNumber": "TAX123456"
 }
-
-
-
+```
