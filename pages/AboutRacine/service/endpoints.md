@@ -45,9 +45,9 @@
 
 ## DTO Structures
 
-### 1. Ser
+### 1. ServiceRequest
 
-This DTO is used when creating or updating an Agency.
+This DTO is used when creating or updating an Service.
 
 #### Fields:
 
@@ -71,28 +71,42 @@ This DTO is used when creating or updating an Agency.
 
 ```json
 {
-  "organisationId": "d2d2d2d2-d2d2-4d2d-b2d2-d2d2d2d2d2d",
-  "shortName": "Quick Services",
-  "longName": "Quick Services Agency",
-  "description": "A brief description of the agency.",
-  "isActive": true,
-  "agencyLocation": "123 Main St, City, Country",
-  "transferable": false,
-  "images": ["http://example.com/image1.jpg", "http://example.com/image2.jpg"],
-  "greetingMessage": "Welcome to Quick Services!",
-  "registrationDate": "2023-01-01T00:00:00",
-  "averageRevenue": 100000.00,
-  "capitalShare": 50000.00,
-  "registrationNumber": "REG123456",
-  "socialNetwork": "http://facebook.com/quickservices",
-  "taxNumber": "TAX123456"
+  "productBrandId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "immatriculation": "string",
+  "serialNumber": "string",
+  "skuCode": "string",
+  "barCode": "string",
+  "qrCode": "string",
+  "name": "string",
+  "shortDescription": "string",
+  "longDescription": "string",
+  "storageCondition": "string",
+  "modelId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "iotNumber": "string",
+  "availableQuantity": 0,
+  "productType": "TANGIBLE",
+  "basePrice": 0,
+  "accessibility": "PUBLIC",
+  "organisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "defaultAgencyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "packagingVente": "KG",
+  "packagingAchat": "KG",
+  "categorieId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "numberUsage": 0,
+  "transferable": true,
+  "state": "AVAILABLE",
+  "maxReservation": 0,
+  "isTangible": true,
+  "expiresAt": "2025-02-20T11:03:57.775Z",
+  "ressources": [{"ressourceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"}]
 }
 ```
 
-2. AgenceResponse
+### 2. ServiceResponse
 
 This DTO is used to return information about an Agency after creation or retrieval.
-```Fields:
+
+#### Fields:
 
     agencyId: UUID — Unique identifier for the agency.
     shortName: String — Short name of the agency.
@@ -107,23 +121,72 @@ This DTO is used to return information about an Agency after creation or retriev
     registrationNumber: String — Registration number of the agency.
     socialNetwork: String — Social network links.
     taxNumber: String — Tax number of the agency.
-```
-Example:
-```json
+    
+#### Example:
 
+```json
 {
-  "agencyId": "a1a1a1a1-a1a1-4a1a-a1a1-a1a1a1a1a1a1",
-  "shortName": "Quick Services",
-  "longName": "Quick Services Agency",
-  "isActive": true,
-  "description": "A brief description of the agency.",
-  "agencyLocation": "123 Main St, City, Country",
-  "greetingMessage": "Welcome to Quick Services!",
-  "registrationDate": "2023-01-01T00:00:00",
-  "averageRevenue": 100000.00,
-  "capitalShare": 50000.00,
-  "registrationNumber": "REG123456",
-  "socialNetwork": "http://facebook.com/quickservices",
-  "taxNumber": "TAX123456"
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "immatriculation": "string",
+  "serialNumber": "string",
+  "skuCode": "string",
+  "barCode": "string",
+  "qrCode": "string",
+  "name": "string",
+  "shortDescription": "string",
+  "longDescription": "string",
+  "storageCondition": "string",
+  "iotNumber": "string",
+  "availableQuantity": 0,
+  "productType": "TANGIBLE",
+  "basePrice": 0,
+  "accessibility": "PUBLIC",
+  "organisationId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "defaultAgencyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "packagingVente": "KG",
+  "packagingAchat": "KG",
+  "categorieId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "numberUsage": 0,
+  "transferable": true,
+  "state": "AVAILABLE",
+  "maxReservation": 0,
+  "isTangible": true,
+  "createdAt": "2025-02-20T11:03:57.787Z",
+  "updatedAt": "2025-02-20T11:03:57.787Z",
+  "expiresAt": "2025-02-20T11:03:57.787Z",
+  "model": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "createdByUserId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "string",
+    "description": "string"
+  },
+  "productBrand": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "string",
+    "description": "string",
+    "brandCode": "string",
+    "brandImageId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "createdByUserId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "notes": "string",
+    "createdAt": "2025-02-20T11:03:57.787Z",
+    "updatedAt": "2025-02-20T11:03:57.787Z"
+  },
+  "ressources": [{
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "skuCode": "string",
+      "qrCode": "string",
+      "name": "string",
+      "shortDescription": "string",
+      "longDescription": "string"
+  }],
+  "medias": [{
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "targetId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "name": "string",
+      "realName": "string",
+      "size": 0,
+      "fileType": "string",
+      "primary": true
+    }]
 }
 ```
