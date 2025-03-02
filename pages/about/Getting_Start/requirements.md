@@ -1,8 +1,9 @@
 # REQUIREMENTS
 
 ## Prerequisites
-ubuntu 22.04
-java 21
+- **JDK 17+** (Requis pour Spring Boot)
+- **Maven** (ou Gradle)
+- **Docker** (Pour exécuter ScyllaDB)
 
 
 ## Installing Dependencies
@@ -11,10 +12,10 @@ Follow the steps below to install the necessary dependencies:
 
 ### 1. Java Development Kit (JDK)
 
-AlertX requires Java 21 or higher. Install it using the following command:
+ProductX requires Java 21 or higher. Install it using the following command:
 
 ```shell
-sudo apt update && sudo apt install openjdk-21-jdk
+sudo apt update && sudo apt install openjdk-17-jdk
 ```
 
 Verify the installation:
@@ -39,7 +40,7 @@ mvn -version
 
 ### 3. Docker & ScyllaDB
 
-AlertX uses ScyllaDB as a database. You need to install Docker to run ScyllaDB.
+ProductX uses ScyllaDB as a database. You need to install Docker to run ScyllaDB.
 
 #### Install Docker
 
@@ -55,7 +56,7 @@ docker run --name scylla-container -p 9042:9042 -d scylladb/scylla:latest
 
 ### 4. Required Dependencies in `pom.xml`
 
-Organisation_management is built using Spring Boot and requires the following dependencies:
+ProductX is built using Spring Boot and requires the following dependencies:
 
 - **Spring Boot Starter Web**
 - **Spring Boot Starter WebSocket**
@@ -70,4 +71,4 @@ To install all dependencies, navigate to the project root and run:
 mvn clean install
 ```
 
-After following these steps, your system should be ready to run the organisation_management project.
+After following these steps, your system should be ready to run the ProductX project.

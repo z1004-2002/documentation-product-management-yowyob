@@ -23,7 +23,7 @@ export default function Cards() {
   return (
     <div className={classes.Cards}>
       <div className={classes.Card}>
-        <Link href="/AboutRacine/Getting_Start/requirements">
+        <Link href="/about/Getting_Start/requirements">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faRocket} className={classes.Icon} /> 
             Getting Start
@@ -32,7 +32,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/service/about">
+        <Link href="/about/service/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faHandHoldingMedical} className={classes.Icon} />
             SERVICES
@@ -41,7 +41,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/ressource/about">
+        <Link href="/about/ressource/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faBoxOpen} className={classes.Icon} />
             RESSOURCES
@@ -50,7 +50,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/product_post/about">
+        <Link href="/about/product_post/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faSquareUpRight} className={classes.Icon} />
             PRODUCT POST
@@ -59,7 +59,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/product_brand/about">
+        <Link href="/about/product_brand/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faFingerprint} className={classes.Icon} />
             PRODUCT BRAND
@@ -68,7 +68,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/variation/about">
+        <Link href="/about/variation/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faNetworkWired} className={classes.Icon} />
             VARIATIONS
@@ -77,7 +77,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/categorie/about">
+        <Link href="/about/categorie/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faBarcode} className={classes.Icon} />
             CATEGORIE
@@ -86,7 +86,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/model/about">
+        <Link href="/about/model/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faGears} className={classes.Icon} />
             MODEL
@@ -95,7 +95,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/sale_price/about">
+        <Link href="/about/sale_price/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faCoins} className={classes.Icon} />
             SALE PRICES
@@ -104,7 +104,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/sale_point/about">
+        <Link href="/about/sale_point/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faStore} className={classes.Icon} />
             SALE POINTS
@@ -113,7 +113,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/reactions/about">
+        <Link href="/about/reactions/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faFaceSmile} className={classes.Icon} />
             REACTIONS
@@ -122,7 +122,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/reviews/about">
+        <Link href="/about/reviews/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faComment} className={classes.Icon} />
             REVIEWS
@@ -131,7 +131,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/medias/about">
+        <Link href="/about/medias/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faPhotoFilm} className={classes.Icon} />
             MEDIAS
@@ -140,7 +140,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/pricing_mode/about">
+        <Link href="/about/pricing_mode/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faMoneyBills} className={classes.Icon} />
             PRICING MODE
@@ -149,7 +149,7 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/AboutRacine/pricing_mode/about">
+        <Link href="/about/pricing_mode/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faPlus} className={classes.Icon} />
             ATTRIBUTS
