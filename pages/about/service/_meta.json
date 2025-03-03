@@ -1,4 +1,5 @@
 {
   "about": "Service",
-  "endpoints": "Service endpoints"
+  "endpoints": "Service endpoints",
+  "dto": "DTO"
 }
