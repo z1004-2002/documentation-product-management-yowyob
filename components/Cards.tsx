@@ -16,7 +16,8 @@ import {
   faComment,
   faPhotoFilm,
   faMoneyBills,
-  faPlus
+  faPlus,
+  faRuler
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Cards() {
@@ -140,16 +141,16 @@ export default function Cards() {
       </div>
 
       <div className={classes.Card}>
-        <Link href="/about/pricing_mode/about">
+        <Link href="/about/units/about">
           <span className={classes.Title}>
-            <FontAwesomeIcon icon={faMoneyBills} className={classes.Icon} />
-            PRICING MODE
+            <FontAwesomeIcon icon={faRuler} className={classes.Icon} />
+            UNITS
           </span>
         </Link>
       </div>
 
       <div className={classes.Card}>
-        <Link href="/about/pricing_mode/about">
+        <Link href="/about/attributes/about">
           <span className={classes.Title}>
             <FontAwesomeIcon icon={faPlus} className={classes.Icon} />
             ATTRIBUTS
